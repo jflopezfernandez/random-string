@@ -9,7 +9,7 @@ I didn't use autotools as I thought it was overkill for a simple prototype, so r
 
 You can run `make check` after building to run the test suite, but be advised it requires the [CUnit Test Framework](http://cunit.sourceforge.net/).
 
-# Usage
+## Usage
 
 The most basic example:
 
