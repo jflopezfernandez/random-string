@@ -11,7 +11,7 @@ char* generate_random_string(size_t length) {
 
 	memset(buffer, 0, MAXIMUM_BUFFER_LENGTH);
 
-	ssize_t bytes_received = getrandom(buffer, length, GRND_RANDOM);
+	ssize_t bytes_received = getrandom(buffer, length, 0);
 
 	if (bytes_received != length) {
 		fprintf(stderr, "Error: not enough system entropy\n");
